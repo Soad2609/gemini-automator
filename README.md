@@ -1,5 +1,7 @@
 # Gemini Automator
-Gemini Automator is a Python automation script that leverages Selenium to interact with Gemini's AI image generation platform. The script takes in a list of prompts, automatically types them into Gemini, waits for the image to generate, and retrieves the image URL. It is designed to speed up the image generation process with minimal manual input.
+Most AI image generators like ChatGPT charge you after a few free generations. Gemini, on the other hand, lets you generate as many images as you want—for free. But it can only generate one image per prompt. That means you have to wait for each generation to finish before you can submit the next one, which quickly becomes time-consuming. Gemini Automator solves that problem.
+
+It automatically feeds prompts from a prompts.txt file into Gemini, one by one—just like a human would. No need to sit in front of your computer typing each command. It even mimics human behavior to avoid getting flagged by Google or triggering a CAPTCHA, so everything runs smoothly and uninterrupted. It leverages Selenium to interact with Gemini's AI image generation platform.
 
 ## Features
 
@@ -13,7 +15,6 @@ Gemini Automator is a Python automation script that leverages Selenium to intera
 - **Python 3.x**: Make sure Python is installed on your system.
 - **Selenium**: Web automation library to interact with browsers.
 - **Chrome Browser**: Chrome is used for automation with your own profile.
-- **ChromeDriver**: Needed for Selenium to control Chrome (if not using your own profile).
 
 ### Install Required Python Libraries
 
@@ -33,6 +34,8 @@ start chrome --remote-debugging-port=9222 --user-data-dir="C:\Program Files\Goog
 ```
 
 This will launch Chrome with remote debugging enabled on port 9222, allowing the script to control it.
+
+Note: Update the path to your 'chrome.exe' in the ```user-data-dir``` field if Chrome is installed in a location other than the default.
 
 ### Step 2: Run the Python Script
 - Clone this repository or download the script to your local machine.
@@ -54,3 +57,6 @@ Once the script completes, the image URLs will be displayed in your chatbox with
 
 ## Contributing
 If you'd like to contribute to this project, feel free to fork the repository, create a branch, and submit a pull request. Contributions are always welcome!
+
+## Credit
+Gemini Automator has been solely developed by Soad.
